@@ -548,7 +548,7 @@ Future<void> eraseInstallTest({
   await tester.testSourceSelectionPage();
   await tester.testCodecsAndDriversPage();
   await tester.testStoragePage(type: StorageTypeEraseInstall(target));
-    await tester.testGuidedCapabilityPage();
+  await tester.testGuidedCapabilityPage();
   await tester.testIdentityPage(
     identity: const Identity(realname: 'a', hostname: 'b', username: 'c'),
     password: 'password',
