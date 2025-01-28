@@ -340,6 +340,9 @@ class UbuntuBootstrapLocalizationsSi extends UbuntuBootstrapLocalizations {
   String get installationTypeNone => 'කිසිවක් නැත';
 
   @override
+  String get installationTypeNoneInfo => 'Standard file system without encryption.';
+
+  @override
   String get installationTypeNoneSelected => 'තේරීමක් නැත';
 
   @override
@@ -350,6 +353,9 @@ class UbuntuBootstrapLocalizationsSi extends UbuntuBootstrapLocalizations {
 
   @override
   String get installationTypeLVMEncryption => 'LVM හා සංකේතනය භාවිතා කරන්න';
+
+  @override
+  String get installationTypeLVMEncryptionInfo => 'Native encryption with LVM. You will need to enter a passphrase every time you turn on your computer.';
 
   @override
   String get installationTypeLVMEncryptionSelected => 'LVM හා සංකේතනය තෝරා ඇත';
@@ -364,6 +370,9 @@ class UbuntuBootstrapLocalizationsSi extends UbuntuBootstrapLocalizations {
   String get installationTypeZFSEncryption => 'තැටිය මකා ZFS සමඟ සංකේතනය භාවිතා කරන්න';
 
   @override
+  String get installationTypeZFSEncryptionInfo => 'Native encryption with ZFS. You will need to enter a passphrase every time you turn on your computer.';
+
+  @override
   String get installationTypeZFSSelected => 'ZFS තෝරා ඇත';
 
   @override
@@ -374,7 +383,7 @@ class UbuntuBootstrapLocalizationsSi extends UbuntuBootstrapLocalizations {
 
   @override
   String installationTypeTPMInfo(String DISTRO, String url) {
-    return 'This is an experimental feature. It may not work with your hardware or future $DISTRO releases. <a href=\"$url\">Read about TPM encryption</a> before you choose this option.';
+    return 'It may not work with your hardware or future $DISTRO releases. <a href=\"$url\">Read about TPM encryption</a> before you choose this option.';
   }
 
   @override
