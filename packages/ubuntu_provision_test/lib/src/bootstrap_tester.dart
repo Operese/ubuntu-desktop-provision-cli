@@ -177,6 +177,9 @@ extension UbuntuBootstrapPageTester on WidgetTester {
     if (screenshot != null) {
       await takeScreenshot(screenshot);
     }
+
+    await tapNext();
+    await pumpAndSettle();
   }
 
   Future<void> testGuidedCapabilityPage({
@@ -225,6 +228,9 @@ extension UbuntuBootstrapPageTester on WidgetTester {
         await takeScreenshot(screenshot);
       }
     }
+
+    await tapNext();
+    await pumpAndSettle();
   }
 
   Future<void> testBitLockerPage({
